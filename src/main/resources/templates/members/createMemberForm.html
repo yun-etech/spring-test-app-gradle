@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<th:block th:replace="fragments/header :: headerFragment"></th:block>
+    <div class="container" style="margin-top: 20px;">
+        <form action="/members/new" method="post">
+            <div class="input-group mb-3">
+                <span class="input-group-text">이름</span>
+                <input type="text" class="form-control" id="name" name="name" placeholder="이름을 입력하세요">
+            </div>
+            <button type="submit" class="btn btn-primary">등록</button>
+        </form>
+    </div>
+<th:block th:replace="fragments/footer :: footerFragment"></th:block>
+</html>
